@@ -1,4 +1,5 @@
 import Header from './Header';
+import Footer from '@/components/Footer';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -16,6 +17,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div className={'relative flex w-full flex-col max-w-7xl mx-auto'}>
         <Header />
         {children}
+        <Footer/>
       </div>
     </>
   );
