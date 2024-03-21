@@ -1,11 +1,25 @@
 import Hero from '@/components/Hero';
 import Photos from '@/components/Photos';
+import Container from '@/components/Container';
+import Newsletter from '@/components/Newsletter';
 
 export default async function Home() {
   return (
     <main>
-      <Hero/>
-      <Photos/>
+      <Hero />
+      <Photos />
+
+      <Container className={'mt-24 md:mt-28'}>
+        <div className={'max-w-xl mx-auto grid grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2'}>
+          {/* Right */}
+          <div className={''}>article</div>
+
+          {/*  Left */}
+          <div className={''}>
+            <Newsletter />
+          </div>
+        </div>
+      </Container>
     </main>
   );
 }
