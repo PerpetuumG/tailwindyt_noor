@@ -2,6 +2,7 @@ import Hero from '@/components/Hero';
 import Photos from '@/components/Photos';
 import Container from '@/components/Container';
 import Newsletter from '@/components/Newsletter';
+import Resume from '@/components/Resume';
 
 export default async function Home() {
   return (
@@ -17,6 +18,8 @@ export default async function Home() {
           {/*  Left */}
           <div className={'space-y-10 lg:pl-16 xl:pl-24'}>
             <Newsletter />
+
+            <Resume />
           </div>
         </div>
       </Container>
